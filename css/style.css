@@ -233,4 +233,25 @@ header nav ul li a:visited {
   height: 250px;
 }
 
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer nav {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+footer nav ul li a img {
+  width: 35px;
+  padding-top: 25%;
+}
+footer section div a img {
+  padding-top: 10%;
+  padding-left: 10%;
+  width: 80px;
+}
+
 /*# sourceMappingURL=style.css.map */
