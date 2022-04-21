@@ -233,6 +233,97 @@ header nav ul li a:visited {
   height: 250px;
 }
 
+section {
+  display: grid;
+  grid-template-areas: "title" "formulario" "mapas";
+  justify-items: center;
+  padding-bottom: 100px;
+}
+section .cont-contact-title {
+  grid-area: title;
+  margin-top: 1em;
+}
+section .cont-contact-title p {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: cornsilk;
+  text-align: center;
+  padding-bottom: 1em;
+}
+section .formulario {
+  grid-area: formulario;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 10px;
+  width: 45%;
+  margin: 0 0 100px 0;
+  padding: 50px;
+}
+section .formulario div label {
+  font-family: "Oswald", sans-serif;
+}
+section .form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+section .form-row input[type=text],
+section .form-row input[type=email] {
+  background-color: #fff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+section .form-row label {
+  margin-bottom: 10px;
+}
+section .form-row textarea {
+  font-size: 14px;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 7px;
+  min-height: 200px;
+  width: 100%;
+  resize: none;
+}
+section .form-row .instructions {
+  color: #999;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+section .form-row button {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5995da;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+section .form-row button:hover {
+  background-color: #76aeed;
+}
+section .form-row button:active {
+  background-color: #407fc7;
+}
+section .btn-primary {
+  background-color: #3477c4;
+  /* no me queda el mismo color que el form */
+  border: none;
+}
+section .btn-primary:hover {
+  background-color: #76aeed;
+}
+section .btn-primary:active {
+  background-color: #407fc7;
+}
+
 footer {
   background-color: #ffffff;
   display: flex;
