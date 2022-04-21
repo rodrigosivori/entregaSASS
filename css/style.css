@@ -472,6 +472,42 @@ header nav ul li a:visited {
   visibility: hidden;
 }
 
+/* ABOUT TO CSS */
+.about-to {
+  display: grid;
+  grid-template-areas: "about-title" "about-img";
+  grid-template-columns: 60%;
+  row-gap: 2em;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 150px;
+  border: 6px solid #c0bfbf;
+  border-radius: 50px;
+}
+.about-to div {
+  grid-area: about-title;
+}
+.about-to div p {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: cornsilk;
+  text-align: center;
+}
+.about-to .about-img {
+  grid-area: about-img;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-to .about-img div img {
+  max-width: 100%;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+
 /* FOOTER CSS */
 footer {
   background-color: #ffffff;
