@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.home {
+  background-color: #5e5e5e;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: chocolate;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 2vw;
+}
+
 header {
   display: flex;
   height: 100px;
@@ -51,6 +74,163 @@ header nav ul li a:visited {
   .contenedor div p {
     display: none;
   }
+}
+.contenedor {
+  display: grid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 150px;
+  grid-template-areas: "indexleft1 indexright1" "indexleft2 indexright2" "indexleft3 indexright3" "indexleft4 indexright4";
+  column-gap: 5px;
+  row-gap: 50px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 250px;
+  border: 6px solid #c0bfbf;
+  border-radius: 50px;
+}
+.contenedor div p {
+  width: 90%;
+  font-family: "Oswald", sans-serif;
+  color: cornsilk;
+  text-align: center;
+  font-size: 1vw;
+}
+.contenedor div p a {
+  color: cornsilk;
+  text-decoration: underline;
+}
+.contenedor div p a:hover {
+  color: #000000;
+}
+.contenedor .indexleft1 {
+  grid-area: indexleft1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+}
+.contenedor .indexright1-box, .contenedor .indexright1 {
+  grid-area: indexright1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  align-items: center;
+  height: 250px;
+}
+.contenedor .indexright1 img, .contenedor .indexright1-box img {
+  border-radius: 15px;
+  width: 300px;
+  max-width: 90%;
+  transition: all 0.8s;
+}
+.contenedor .indexright1 img:hover, .contenedor .indexright1-box img:hover {
+  transform: translate(-20px, 20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+.contenedor .indexleft2-box, .contenedor .indexleft2 {
+  grid-area: indexleft2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+}
+.contenedor .indexleft2 img, .contenedor .indexleft2-box img {
+  border-radius: 15px;
+  width: 300px;
+  max-width: 90%;
+  transition: all 0.8s;
+}
+.contenedor .indexleft2 img:hover, .contenedor .indexleft2-box img:hover {
+  transform: translate(20px, 20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+.contenedor .indexright2 {
+  grid-area: indexright2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+}
+.contenedor .indexleft2-box img, .contenedor .indexright1-box img {
+  border-radius: 15px;
+}
+.contenedor .indexleft3 {
+  grid-area: indexleft3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+}
+.contenedor .indexright3 {
+  grid-area: indexright3;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+  align-items: center;
+}
+.contenedor .indexright3 iframe {
+  height: 150px;
+  max-width: 90%;
+  border-radius: 15px;
+}
+.contenedor .indexleft4 {
+  grid-area: indexleft4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
+}
+.contenedor .indexleft4 iframe {
+  height: 150px;
+  max-width: 90%;
+  border-radius: 15px;
+}
+.contenedor .indexright4 {
+  grid-area: indexright4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #c0bfbf;
+  border-top: 2px solid #c0bfbf;
+  border-bottom: 2px solid #c0bfbf;
+  border-radius: 15px;
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+.contenedor {
+    display: grid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 150px;
+    grid-template-areas: 
+    "indexleft1 indexright1"
+    "indexleft2 indexright2"
+    "indexleft3 indexright3"
+    "indexleft4 indexright4";
+    column-gap: 5px;
+    row-gap: 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px;
+    border: 6px solid #c0bfbf;
+    border-radius: 50px;
+
+    div {
+        p {
+            width: 90%;
+            font-family: 'Oswald', sans-serif;
+            color: cornsilk; 
+            text-align: center;
+            font-size: 1vw;
+
+            a { 
+                color: cornsilk; 
+                text-decoration: underline;
+
+                &:hover {
+                    color: #000000; 
+                    
+                }
+            }
+        }
+    }
+    .indexleft1 {
+        grid-area: indexleft1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius:15px;
+        height: 250px;
+    }
+    .indexright1-box, .indexright1 {
+        grid-area: indexright1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius: 15px;
+        align-items: center;
+        height: 250px;
+    }
+    .indexright1, .indexright1-box {
+        img {
+            border-radius: 15px;
+            width: 300px;
+            max-width: 90%;
+            transition: all .8s;
+            
+            &:hover {
+                transform: translate(-20px, 20px);
+                opacity: 0.05;
+                visibility: hidden;
+            }
+        }
+
+    }
+    .indexleft2-box, .indexleft2 {
+        grid-area: indexleft2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius:15px;
+        height: 250px;
+    }
+    .indexleft2, .indexleft2-box {
+        img {
+            border-radius: 15px;
+            width: 300px;
+            max-width: 90%;
+            transition: all .8s;
+
+            &:hover {
+                transform: translate(20px, 20px);
+                opacity: 0.05;
+                visibility: hidden;
+            }
+        }
+    }
+    .indexright2 {
+        grid-area: indexright2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius: 15px;
+        height: 250px;
+    }
+
+    .indexleft2-box, .indexright1-box {
+        img {
+            border-radius: 15px;
+        }
+    }
+    
+    .indexleft3 {
+        grid-area: indexleft3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius:15px;
+        height: 250px;
+    }
+
+    .indexright3 {
+        grid-area: indexright3;
+        display: flex;
+        justify-content: center;
+        border-right: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius: 15px;
+        height: 250px;
+        align-items: center;
+
+        iframe {
+            height: 150px;
+            max-width: 90%;
+            border-radius: 15px;
+        }
+    }
+    .indexleft4 {
+        grid-area: indexleft4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius:15px;
+        height: 250px;
+
+        iframe {
+            height: 150px;
+            max-width: 90%;
+            border-radius: 15px;
+        }
+    }
+    .indexright4 {
+        grid-area: indexright4;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #c0bfbf;
+        border-top: 2px solid #c0bfbf;
+        border-bottom: 2px solid #c0bfbf;
+        border-radius: 15px;
+        height: 250px;
+    }
+}
