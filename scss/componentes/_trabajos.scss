@@ -1,0 +1,105 @@
+/* TRABAJOS CSS */
+.cont-trabajos {
+    display: grid;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 150px;
+    grid-template-areas: 
+    "trab-left1 trab-right1"
+    "trab-left2 trab-right2";
+    column-gap: 5px;
+    row-gap: 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px;
+    border: 6px solid #c0bfbf;
+    border-radius: 50px;
+
+    div {
+        p {
+        padding-top: 1em;
+        width: 90%;
+        font-family: 'Oswald', sans-serif;
+        color: cornsilk; 
+        text-align: center;
+        }
+
+        img {
+            max-width: 90%;
+            border-radius: 15px;
+        }           
+    }
+
+    .trab-left1, .trab-left1-back {
+        grid-area: trab-left1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            border-radius: 15px;
+            transition: all .8s;
+
+            &:hover {
+                transform: translate(20px, 20px);
+                opacity: 0.05;
+                visibility: hidden;
+            }
+        }
+    }
+    
+    .trab-right1, .trab-right1-back {
+        grid-area: trab-right1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            border-radius: 15px;
+            transition: all .8s;
+
+            &:hover {
+                transform: translate(-20px, 20px);
+                opacity: 0.05;
+                visibility: hidden;
+            }
+        }
+    }
+    
+    .trab-left2, .trab-left2-back {
+        grid-area: trab-left2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            border-radius: 15px;
+            transition: all .8s;
+            
+            &:hover {
+                transform: translate(20px, -20px);
+                opacity: 0.05;
+                visibility: hidden;
+    
+            }
+        }
+    }
+    
+    .trab-right2, .trab-right2-back {
+        grid-area: trab-right2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border-radius: 15px;
+            transition: all .8s;
+            
+            &:hover {
+                transform: translate(-20px, -20px);
+                opacity: 0.05;
+                visibility: hidden;
+
+            }
+        }
+    }
+}

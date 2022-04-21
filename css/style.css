@@ -21,6 +21,7 @@ h4 {
   font-size: 2vw;
 }
 
+/* HEADER CSS */
 header {
   display: flex;
   height: 100px;
@@ -75,6 +76,7 @@ header nav ul li a:visited {
     display: none;
   }
 }
+/* INDEX CSS */
 .contenedor {
   display: grid;
   padding-top: 40px;
@@ -384,6 +386,93 @@ header nav ul li a:visited {
   height: 250px;
 }
 
+/* TRABAJOS CSS */
+.cont-trabajos {
+  display: grid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 150px;
+  grid-template-areas: "trab-left1 trab-right1" "trab-left2 trab-right2";
+  column-gap: 5px;
+  row-gap: 50px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 250px;
+  border: 6px solid #c0bfbf;
+  border-radius: 50px;
+}
+.cont-trabajos div p {
+  padding-top: 1em;
+  width: 90%;
+  font-family: "Oswald", sans-serif;
+  color: cornsilk;
+  text-align: center;
+}
+.cont-trabajos div img {
+  max-width: 90%;
+  border-radius: 15px;
+}
+.cont-trabajos .trab-left1, .cont-trabajos .trab-left1-back {
+  grid-area: trab-left1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-trabajos .trab-left1 img, .cont-trabajos .trab-left1-back img {
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+.cont-trabajos .trab-left1 img:hover, .cont-trabajos .trab-left1-back img:hover {
+  transform: translate(20px, 20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+.cont-trabajos .trab-right1, .cont-trabajos .trab-right1-back {
+  grid-area: trab-right1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-trabajos .trab-right1 img, .cont-trabajos .trab-right1-back img {
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+.cont-trabajos .trab-right1 img:hover, .cont-trabajos .trab-right1-back img:hover {
+  transform: translate(-20px, 20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+.cont-trabajos .trab-left2, .cont-trabajos .trab-left2-back {
+  grid-area: trab-left2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-trabajos .trab-left2 img, .cont-trabajos .trab-left2-back img {
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+.cont-trabajos .trab-left2 img:hover, .cont-trabajos .trab-left2-back img:hover {
+  transform: translate(20px, -20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+.cont-trabajos .trab-right2, .cont-trabajos .trab-right2-back {
+  grid-area: trab-right2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-trabajos .trab-right2 img, .cont-trabajos .trab-right2-back img {
+  border-radius: 15px;
+  transition: all 0.8s;
+}
+.cont-trabajos .trab-right2 img:hover, .cont-trabajos .trab-right2-back img:hover {
+  transform: translate(-20px, -20px);
+  opacity: 0.05;
+  visibility: hidden;
+}
+
+/* FOOTER CSS */
 footer {
   background-color: #ffffff;
   display: flex;
