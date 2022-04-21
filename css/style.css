@@ -233,24 +233,25 @@ header nav ul li a:visited {
   height: 250px;
 }
 
-section {
+/* CONTACTO CSS */
+.cont-contacto {
   display: grid;
   grid-template-areas: "title" "formulario" "mapas";
   justify-items: center;
   padding-bottom: 100px;
 }
-section .cont-contact-title {
+.cont-contacto .cont-contact-title {
   grid-area: title;
   margin-top: 1em;
 }
-section .cont-contact-title p {
+.cont-contacto .cont-contact-title p {
   width: 100%;
   font-family: "Oswald", sans-serif;
   color: cornsilk;
   text-align: center;
   padding-bottom: 1em;
 }
-section .formulario {
+.cont-contacto .formulario {
   grid-area: formulario;
   background-color: #f6f7f8;
   border: 1px solid #d6d9dc;
@@ -259,18 +260,18 @@ section .formulario {
   margin: 0 0 100px 0;
   padding: 50px;
 }
-section .formulario div label {
+.cont-contacto .formulario div label {
   font-family: "Oswald", sans-serif;
 }
-section .form-row {
+.cont-contacto .form-row {
   margin-bottom: 40px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section .form-row input[type=text],
-section .form-row input[type=email] {
+.cont-contacto .form-row input[type=text],
+.cont-contacto .form-row input[type=email] {
   background-color: #fff;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
@@ -278,10 +279,10 @@ section .form-row input[type=email] {
   padding: 7px;
   font-size: 14px;
 }
-section .form-row label {
+.cont-contacto .form-row label {
   margin-bottom: 10px;
 }
-section .form-row textarea {
+.cont-contacto .form-row textarea {
   font-size: 14px;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
@@ -291,12 +292,12 @@ section .form-row textarea {
   width: 100%;
   resize: none;
 }
-section .form-row .instructions {
+.cont-contacto .form-row .instructions {
   color: #999;
   margin-bottom: 30px;
   font-size: 14px;
 }
-section .form-row button {
+.cont-contacto .form-row button {
   font-size: 15px;
   font-weight: bold;
   color: #fff;
@@ -306,22 +307,81 @@ section .form-row button {
   padding: 10px 40px;
   cursor: pointer;
 }
-section .form-row button:hover {
+.cont-contacto .form-row button:hover {
   background-color: #76aeed;
 }
-section .form-row button:active {
+.cont-contacto .form-row button:active {
   background-color: #407fc7;
 }
-section .btn-primary {
+.cont-contacto .btn-primary {
   background-color: #3477c4;
   /* no me queda el mismo color que el form */
   border: none;
 }
-section .btn-primary:hover {
+.cont-contacto .btn-primary:hover {
   background-color: #76aeed;
 }
-section .btn-primary:active {
+.cont-contacto .btn-primary:active {
   background-color: #407fc7;
+}
+
+/* MULTIMEDIA CSS */
+.videos .titulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.videos .titulo p {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: cornsilk;
+}
+.videos .content-multimedia {
+  display: grid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 150px;
+  margin-left: 150px;
+  margin-right: 150px;
+  grid-template-areas: "videoleft1 videoright1" "videoleft2 videoright2";
+  column-gap: 5px;
+  row-gap: 25px;
+  grid-template-columns: 50% 50%;
+  border: 6px solid #c0bfbf;
+  border-radius: 50px;
+  justify-items: center;
+  align-items: center;
+}
+.videos .content-multimedia .video-left1 {
+  grid-area: videoleft1;
+  display: flex;
+  border-radius: 15px;
+  width: 75%;
+  height: 250px;
+}
+.videos .content-multimedia .video-left2 {
+  grid-area: videoleft2;
+  display: flex;
+  border-radius: 15px;
+  width: 75%;
+  height: 250px;
+}
+.videos .content-multimedia .video-right1 {
+  grid-area: videoright1;
+  display: flex;
+  border-radius: 15px;
+  width: 75%;
+  height: 250px;
+}
+.videos .content-multimedia .video-right2 {
+  grid-area: videoright2;
+  display: flex;
+  border-radius: 15px;
+  width: 75%;
+  height: 250px;
 }
 
 footer {

@@ -1,0 +1,73 @@
+/* MULTIMEDIA CSS */
+.videos {
+    .titulo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+       
+        p {
+            display: flex;
+            width: 50%;    
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            color: cornsilk;
+        }
+    }
+    .content-multimedia {
+        display: grid;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 150px;
+        margin-left: 150px;
+        margin-right: 150px;
+        grid-template-areas: 
+        "videoleft1 videoright1"
+        "videoleft2 videoright2";
+        column-gap: 5px;
+        row-gap: 25px;
+        grid-template-columns: 50% 50%;
+        border: 6px solid #c0bfbf;
+        border-radius: 50px;
+        justify-items: center;
+        align-items: center;
+
+        
+        .video-left1 {
+            grid-area: videoleft1;
+            display: flex;
+            border-radius: 15px;
+            width: 75%;
+            height: 250px;
+            
+        }
+        
+        .video-left2 {
+            grid-area: videoleft2;
+            display: flex;
+            border-radius: 15px;
+            width: 75%;
+            height: 250px;
+        
+        }
+        
+        .video-right1 {
+            grid-area: videoright1;
+            display: flex;
+            border-radius: 15px;
+            width: 75%;
+            height: 250px;
+        
+        }
+        
+        .video-right2 {
+            grid-area: videoright2;
+            display: flex;
+            border-radius: 15px;
+            width: 75%;
+            height: 250px;
+        
+        }
+    }
+    
+}
